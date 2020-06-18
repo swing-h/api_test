@@ -1,7 +1,7 @@
 import unittest
-from lib.HTMLTestReportCN import HTMLTestRunner
-from config.config import *
-from lib.send_email_m import send_email
+from api_test_framework.lib.HTMLTestReportCN import HTMLTestRunner
+from api_test_framework.config.config import *
+from api_test_framework.lib.send_email_m import send_email
 
 logging.info("================================== 测试开始 ==================================")
 suite = unittest.defaultTestLoader.discover(test_path)   #从配置文件中读取用例路径
